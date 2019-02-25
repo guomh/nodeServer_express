@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><title>Title</title><style>body{
+            background-color: #fff;
+        }
+        .container{
+            position: relative;
+        }
+        video{
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        canvas,img{
+            width: 200px;
+            height: 200px;
+        }
+        .canvasContainer{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            left:200px;
+        }
+        canvas{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top:0;
+        }</style><script src=./adapter.js></script><script src=./screenshot.js></script></head><body id=container><div class=container><video id=self autoplay></video><div class=canvasContainer><canvas id=canvas></canvas><canvas id=drawcanvas></canvas></div><img id=img></div><button id=masterbtn>master</button> <button id=slavebtn>slave</button> <button id=closebtn>close</button> <button id=printbtn>截图</button> <button id=drawbtn>draw</button> <button id=clearbtn>clear</button><script type=text/javascript src=manifest.js></script><script type=text/javascript src=main.js></script></body></html>

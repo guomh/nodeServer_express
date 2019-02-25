@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Model">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body ng-controller="Controller">
+    <h1>hello world!</h1>
+    <div>
+        <label for="name">name</label><input id="name" type="text" ng-model="cu.name">
+        <label for="age">age</label><input id="age" type="text" ng-model="cu.age">
+        <button ng-click="create();">create</button>
+    </div>
+    <div>
+        <label for="uname">name</label><input id="uname" type="text" ng-model="uu.name">
+        <label for="uage">age</label><input id="uage" type="text" ng-model="uu.age">
+        <button ng-click="update()">update</button>
+    </div>
+    <ul>
+        <li ng-repeat="user in users">
+            <span>{{user.id}}</span>
+            <span>{{user.name}}</span>
+            <span>{{user.age}}</span>
+            <span ng-click="select(user)">update</span>
+            <span ng-click="delete(user)">delete</span>
+        </li>
+    </ul>
+    <form id="form">
+        <input type="text" name="a"/>
+        <input type="file" name="f" id="file"/>
+        <input type="file" name="f" />
+        <button ng-click="upload()">submit</button>
+    </form>
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/angular.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
